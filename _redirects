@@ -1,0 +1,15 @@
+# Dashboard Médico - Configuração Netlify
+# Roteamento para Single Page Application
+
+# Redirecionar todas as rotas para index.html
+/*    /index.html   200
+
+# Headers de segurança
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+
+# Cache para arquivos estáticos
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
